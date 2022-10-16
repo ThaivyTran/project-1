@@ -1,0 +1,139 @@
+/* * {
+    background-image: ;
+    font-family: ;
+} */
+
+nav {
+    display: flex;
+    border-color: purple;
+    margin-bottom: 100px;
+    float: right;
+}
+
+/* to remove bullet points in nav*/
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    list-style: none;
+    padding: 26px 30px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: left;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    display: inline-flex;
+    font-size: 16px;
+}
+
+img {
+    border: 2px solid;
+}
+
+.location {
+    background-color: red;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+}
+
+/* Taco truck picture inside location tag */
+.location img {
+    float: right;
+}
+
+button {
+    border-radius: 5px;
+    background-color: rgb(245, 209, 215);
+}
+
+/* When cursor is hovered over button*/
+button:hover {
+    background-color: hotpink;
+} 
+
+/* When button is clicked */
+button:active {
+    background-color: pink;
+} 
+
+.photos {
+    display: flex;
+    margin: 5px;
+    background-color: blue;
+    flex-direction: column;
+    height: 300px;
+    margin: 5px;
+    padding: 10px;
+    overflow: scroll; /* creates the scroll bar inside container */
+}
+
+
+.gallery {
+    margin: 5px;
+    border: 1px solid white;
+    float: left;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+}
+
+.gallery p {
+    padding: 5px;
+}
+
+.about {
+    display: flex;
+    float: right;
+    background-color: cyan;
+    flex-direction: column;
+    height: 300px;
+    margin: 5px;
+    padding: 10px;
+    overflow: scroll;
+}
+
+footer {
+    background-color: green;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+footer ul {
+    display: inline-block;
+    margin-top: -20px;
+}
+
+/* footer icon size is 20px */
+footer i {
+    font-size: 20px;
+    color: black;
+}
+
+/* when cursor is hovered icons turns white */
+footer i:hover {
+    color: white;
+}
+
+/* @media screen and (min-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+  } */
