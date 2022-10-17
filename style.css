@@ -72,10 +72,9 @@ button:active {
 
 .photos {
     display: flex;
-    margin: 5px;
     background-color: blue;
     flex-direction: column;
-    height: 300px;
+    max-height: 300px;
     margin: 5px;
     padding: 10px;
     overflow: scroll; /* creates the scroll bar inside container */
@@ -103,7 +102,7 @@ button:active {
     float: right;
     background-color: cyan;
     flex-direction: column;
-    height: 300px;
+    max-height: 300px;
     margin: 5px;
     padding: 10px;
     overflow: scroll;
