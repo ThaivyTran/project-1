@@ -43,9 +43,21 @@ img {
     border: 2px solid;
 }
 
-.location {
+/* about */
+.about {
     background-color: red;
     flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+}
+
+/* location  */
+.location {
+    display: flex;
+    background-color: blue;
+    flex-direction: column;
+    max-height: 500px;
+    max-width: 50%;
     margin: 5px;
     padding: 10px;
 }
@@ -58,6 +70,7 @@ img {
 button {
     border-radius: 5px;
     background-color: rgb(245, 209, 215);
+    display: inline-block;
 }
 
 /* When cursor is hovered over button*/
@@ -70,34 +83,8 @@ button:active {
     background-color: pink;
 } 
 
-.photos {
-    display: flex;
-    background-color: blue;
-    flex-direction: column;
-    max-height: 300px;
-    margin: 5px;
-    padding: 10px;
-    overflow: scroll; /* creates the scroll bar inside container */
-}
-
-
-.gallery {
-    margin: 5px;
-    border: 1px solid white;
-    float: left;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-    justify-content: space-evenly;
-}
-
-.gallery p {
-    padding: 5px;
-}
-
-.about {
+/* youtube video */
+.yt-video {
     display: flex;
     float: right;
     background-color: cyan;
@@ -108,6 +95,12 @@ button:active {
     overflow: scroll;
 }
 
+.yt-video img {
+    width: 300px;
+    height: auto;
+}
+
+/* footer  */
 footer {
     background-color: green;
     text-align: center;
