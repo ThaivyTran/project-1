@@ -5,12 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/d6ffe85331.js" crossorigin="anonymous"></script>
+
    <!-- Compiled and minified CSS -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+     crossorigin=""/>
    <link href="assets/style.css" rel="stylesheet" /> 
-</head>
+     <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+     crossorigin=""></script>
+  <title>Tres Tamales Taco Truck</title>
+ </head>
 
- <title>Tres Tamales Taco Truck</title>
 
 <!-- nav bar -->
 
@@ -50,6 +57,10 @@
    <img src="https://i.ibb.co/Pwd3NF6/insert.png">
       <p>Tres Tamales Taco Truck is soon to be the best mobile Mexican joint in Philadelphia! We will be coming to a corner near you seven days a week. Our website will have general information about us, including our menu, contact information, and some of those yummy taco pics! It will also feature an interactive map, so you and your friends can see where we are located each day. Don't forget to check out our Flickr and upload your own “om nom” moments and comments about our food. We love feedback from our customers!</p> 
  </section>
+
+ <section class="maps" id="maps" style="width:25%">
+   <div id="map"></div>
+</section>
 
 <!-- photos  -->
  <section class="photos" id="photos">

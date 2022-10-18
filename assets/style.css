@@ -107,6 +107,8 @@ button:active {
     overflow: scroll;
 }
 
+#map { height: 180px; }
+
 footer {
     background-color: green;
     text-align: center;
