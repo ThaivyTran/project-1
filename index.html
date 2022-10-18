@@ -5,41 +5,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/d6ffe85331.js" crossorigin="anonymous"></script>
-  <link href="assets/style.css" rel="stylesheet" />
+
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+     crossorigin=""/>
+   <link href="assets/style.css" rel="stylesheet" /> 
+     <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+     crossorigin=""></script>
   <title>Tres Tamales Taco Truck</title>
  </head>
 
+
 <!-- nav bar -->
+
+       
+
  <nav>
+   <a href="#" class="brand-logo right">🌮Tres Tamales Taco Truck🌮</a>
    <ul><li><a href="#about">About</a></li></ul>
    <ul><li><a href="#location">Location</a></li></ul>
    <ul><li><a href="#menu">Menu</a></li></ul>
    <ul><li><a href="#photos">Photos</a></li></ul>
    <ul><li><a href="#contact">Contact</a></li></ul>
- </nav>
+</nav>
 
  <header>
-      <h1>Tres Tamales Taco Truck</h1>
+   <img id= "title-font" src ="assets/titlefont.PNG">
        <!-- add banner here if any -->
  </header>
 
- <!-- about -->
- <section class="about" id="about">
-   <h2>About Tres Tamales Taco Truck</h2>
-   <!-- insert taco truck img below -->
-   <img src="https://i.ibb.co/Pwd3NF6/insert.png">
-      <p>Tres Tamales Taco Truck is soon to be the best mobile Mexican joint in Philadelphia! We will be coming to a corner near you seven days a week. Our website will have general information about us, including our menu, contact information, and some of those yummy taco pics! It will also feature an interactive map, so you and your friends can see where we are located each day. Don't forget to check out our Flickr and upload your own “om nom” moments and comments about our food. We love feedback from our customers!</p> 
- </section>
-
- <!-- YouTube video  -->
- <section class="yt-video" id="yt-video" style="width:50%" class="float-right">
-   <h2>Video</h2>
-         <img src="https://i.ibb.co/Pwd3NF6/insert.png">
-         <p>Add a description of the image here</p>
-</section>
-
 <!-- location  -->
- <section class="location" id="location" class="float-right">
+ <section class="location" id="location">
     <h2>Find our taco truck!<i class="fa-solid fa-truck-fast"></i></h2> 
       <h3>SELECT DAY OF THE WEEK:</h3>
         <button>Mon.</button>
@@ -51,6 +50,46 @@
         <button>Sun.</button>
  </section>
 
+<!-- about -->
+ <section class="about" id="about" style="width:50%" class="float-right">
+   <h2>About Tres Tamales Taco Truck</h2>
+   <!-- insert taco truck img below -->
+   <img src="https://i.ibb.co/Pwd3NF6/insert.png">
+      <p>Tres Tamales Taco Truck is soon to be the best mobile Mexican joint in Philadelphia! We will be coming to a corner near you seven days a week. Our website will have general information about us, including our menu, contact information, and some of those yummy taco pics! It will also feature an interactive map, so you and your friends can see where we are located each day. Don't forget to check out our Flickr and upload your own “om nom” moments and comments about our food. We love feedback from our customers!</p> 
+ </section>
+
+ <section class="maps" id="maps" style="width:25%">
+   <div id="map"></div>
+</section>
+
+<script>var map = L.map('map').setView([39.952583,-75.165222], 13);</script>
+<script>L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+   maxZoom: 19,
+   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);</script>
+
+
+<!-- photos  -->
+ <section class="photos" id="photos">
+      <h2>Photos</h2>
+         <section class="gallery">
+            <img src="https://i.ibb.co/Pwd3NF6/insert.png">
+            <p>Add a description of the image here</p>
+         </section>
+         <section class="gallery">
+            <img src="https://i.ibb.co/Pwd3NF6/insert.png">
+            <p>Add a description of the image here</p>
+         </section>
+         <section class="gallery">
+            <img src="https://i.ibb.co/Pwd3NF6/insert.png">
+            <p>Add a description of the image here</p>
+         </section>
+         <section class="gallery">
+            <img src="https://i.ibb.co/Pwd3NF6/insert.png">
+            <p>Add a description of the image here</p>
+         </section>
+ </section>
+
 <!-- footer  -->
  <footer class="contact" id="contact">
    <h3>Contact us!</h3>
@@ -60,5 +99,5 @@
       <ul><p><i class="fa-solid fa-phone"></i>(999)999-9999</p></ul>
  </footer>
 
-
-</html>
+ <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script></html>
