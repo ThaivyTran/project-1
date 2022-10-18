@@ -108,7 +108,8 @@ button:active {
     overflow: scroll;
 }
 
-#map { height: 180px; }
+#map { height: 180px; 
+}
 
 footer {
     background-color: green;
