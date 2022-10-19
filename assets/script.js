@@ -1,23 +1,29 @@
-   <var id="monday"></var>;
-   <var id="Tuesday"></var>;
-   <var id="Wednesday"></var>;
-   <var id="Thursday"></var>;
-   <var id="Friday"></var>;
-   <var id="Saturday"></var>;
-   <var id="sunday"></var>;
-   <><div id="map">;
+ /*  
+  
 
-   <button onClick="choose(Monday)">Monday</button>
-   <button onClick="choose('Tuesday')">Tuesday</button>
-   <button onClick="choose('Wednesday')">Wednesday</button>
-   <button onClick="choose('Thursday')">Thursday</button>
-   <button onClick="choose('Friday')">Friday</button>
-   <button onClick="choose('Saturday')">Saturday</button>
-   <button onClick="choose('sunday')">sunday</button>
-</div>
+*/
+var map = L.map('map').setView([39.952583,-75.165222], 13);
 
-   <script>
-      function myFunction()
-      var x = document.getElementById("Var");
-      {"Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, sunday"}
-   </script></>
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 15,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+   }).addTo(map);
+// L.marker([39.924827,-75.172945]).addTo(map);
+// L.marker([39.919390, -75.165419]).addTo(map);
+
+
+var todayslocation;
+
+var mondaybutton=document.querySelector("#monday")
+   mondaybutton.addEventListener("click", function(){
+   todayslocation=mondaybutton.innerHTML
+   console.log(todayslocation)
+   L.marker([39.924827,-75.172945]).addTo(map);
+})
+
+var tuesdaybutton=document.querySelector("#tuesday")
+tuesdaybutton.addEventListener("click", function(){
+   todayslocation=tuesdaybutton.innerHTML
+   console.log(todayslocation)
+   L.marker([39.919390, -75.165419]).addTo(map);
+})
