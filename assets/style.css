@@ -3,6 +3,7 @@
     font-family: ;
 } */
 
+/* nav style  */
 nav {
     display: flex;
     background-color: #4caf50;
@@ -10,7 +11,6 @@ nav {
     float: right;
 }
 
-/* to remove bullet points in nav*/
 nav ul {
     list-style-type: none;
     display: inline-block;
