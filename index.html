@@ -63,6 +63,14 @@
    <div id="map"></div>
 </section>
 
+<script>var map = L.map('map').setView([39.952583,-75.165222], 13);</script>
+
+<script>L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+   maxZoom: 15,
+   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);</script>
+
+
 <!-- photos  -->
  <section class="photos" id="photos">
       <h2>Photos</h2>
@@ -84,7 +92,7 @@
          </section>
  </section>
 
- <script src="assets/script.js"></script>
+
 
 <!-- footer  -->
  <footer class="contact" id="contact">
@@ -93,6 +101,7 @@
       <ul><a href ="mailto:fake-email@gmail.com"><i class="fa-regular fa-envelope"></i></a></ul>
       <ul><a href="https://urlhere.com" target="blank"><i class="fa-brands fa-yelp"></i></a></ul>
       <ul><p><i class="fa-solid fa-phone"></i>(999)999-9999</p></ul>
+      <script src="assets/script.js"></script>
  </footer>
 
  <!-- Compiled and minified JavaScript -->
