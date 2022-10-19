@@ -3,7 +3,6 @@
     font-family: ;
 } */
 
-/* nav style  */
 nav {
     display: flex;
     background-color: #4caf50;
@@ -11,6 +10,7 @@ nav {
     float: right;
 }
 
+/* to remove bullet points in nav*/
 nav ul {
     list-style-type: none;
     display: inline-block;
@@ -41,10 +41,6 @@ p {
 
 img {
     border: 2px solid;
-}
-
-#map { 
-    height: 180px; 
 }
 
 /* main style for about, yt-video and location containers */
@@ -93,7 +89,6 @@ main {
 .btn-wrapper {
     flex-direction: row;
     display: flex;
-
 }
 
 .btn-wrapper {
@@ -103,6 +98,8 @@ main {
 button {
     border-radius: 5px;
     background-color: rgb(245, 209, 215);
+    width: 70px;
+    height: 25px;
 }
 
 /* When cursor is hovered over button*/
@@ -124,6 +121,11 @@ button:hover {
 button:active {
     background-color: pink;
 } 
+
+/* google map size */
+#map { 
+    height: 400px; 
+}
 
 /* footer  */
 footer {
