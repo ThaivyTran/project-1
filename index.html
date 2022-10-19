@@ -20,15 +20,12 @@
 
 
 <!-- nav bar -->
-
-       
-
  <nav>
-   <a href="#" class="brand-logo right">🌮Tres Tamales Taco Truck🌮</a>
+   <p class="brand-logo right">🌮Tres Tamales Taco Truck🌮</p>
    <ul><li><a href="#about">About</a></li></ul>
    <ul><li><a href="#location">Location</a></li></ul>
    <ul><li><a href="#menu">Menu</a></li></ul>
-   <ul><li><a href="#photos">Photos</a></li></ul>
+   <ul><li><a href="#yt-video">YouTube</a></li></ul>
    <ul><li><a href="#contact">Contact</a></li></ul>
 </nav>
 
@@ -36,11 +33,29 @@
    <img id= "title-font" src ="assets/titlefont.PNG">
        <!-- add banner here if any -->
  </header>
+<main>
+ <!-- about -->
+ <section class="about" id="about" style="width:100%" class="float-right">
+   <h2>About Tres Tamales Taco Truck</h2>
+   <!-- insert taco truck img below -->
+   <img src="https://i.ibb.co/Pwd3NF6/insert.png">
+      <p>Tres Tamales Taco Truck is soon to be the best mobile Mexican joint in Philadelphia! We will be coming to a corner near you seven days a week. Our website will have general information about us, including our menu, contact information, and some of those yummy taco pics! It will also feature an interactive map, so you and your friends can see where we are located each day. Don't forget to check out our Flickr and upload your own “om nom” moments and comments about our food. We love feedback from our customers!</p> 
+ </section>
+
+ <!-- youtube video  -->
+ <section class="yt-video" id="yt-video">
+   <h2>YouTube</h2>
+   <img src="https://i.ibb.co/Pwd3NF6/insert.png">
+   <p>Add a description of the image here</p>
+   <img src="https://i.ibb.co/Pwd3NF6/insert.png">
+   <p>Add a description of the image here</p>
+</section>
 
 <!-- location  -->
  <section class="location" id="location">
     <h2>Find our taco truck!<i class="fa-solid fa-truck-fast"></i></h2> 
       <h3>SELECT DAY OF THE WEEK:</h3>
+      <div class="btn-wrapper">
         <button>Mon.</button>
         <button>Tues.</button>
         <button>Wed.</button>
@@ -48,47 +63,17 @@
         <button>Fri.</button>
         <button>Sat.</button>
         <button>Sun.</button>
+      </div>
+
+         <div id="map"></div>
+      
+      <script>var map = L.map('map').setView([39.952583,-75.165222], 13);</script>
+      <script>L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+         maxZoom: 19,
+         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);</script>
  </section>
-
-<!-- about -->
- <section class="about" id="about" style="width:50%" class="float-right">
-   <h2>About Tres Tamales Taco Truck</h2>
-   <!-- insert taco truck img below -->
-   <img src="https://i.ibb.co/Pwd3NF6/insert.png">
-      <p>Tres Tamales Taco Truck is soon to be the best mobile Mexican joint in Philadelphia! We will be coming to a corner near you seven days a week. Our website will have general information about us, including our menu, contact information, and some of those yummy taco pics! It will also feature an interactive map, so you and your friends can see where we are located each day. Don't forget to check out our Flickr and upload your own “om nom” moments and comments about our food. We love feedback from our customers!</p> 
- </section>
-
- <section class="maps" id="maps" style="width:25%">
-   <div id="map"></div>
-</section>
-
-<script>var map = L.map('map').setView([39.952583,-75.165222], 13);</script>
-<script>L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-   maxZoom: 19,
-   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);</script>
-
-
-<!-- photos  -->
- <section class="photos" id="photos">
-      <h2>Photos</h2>
-         <section class="gallery">
-            <img src="https://i.ibb.co/Pwd3NF6/insert.png">
-            <p>Add a description of the image here</p>
-         </section>
-         <section class="gallery">
-            <img src="https://i.ibb.co/Pwd3NF6/insert.png">
-            <p>Add a description of the image here</p>
-         </section>
-         <section class="gallery">
-            <img src="https://i.ibb.co/Pwd3NF6/insert.png">
-            <p>Add a description of the image here</p>
-         </section>
-         <section class="gallery">
-            <img src="https://i.ibb.co/Pwd3NF6/insert.png">
-            <p>Add a description of the image here</p>
-         </section>
- </section>
+</main>
 
 <!-- footer  -->
  <footer class="contact" id="contact">

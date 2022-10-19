@@ -20,6 +20,7 @@ nav ul li a {
     list-style: none;
 }
 
+/* header styles */
 h1 {
     font-size: 50px;
 }
@@ -42,16 +43,61 @@ img {
     border: 2px solid;
 }
 
-.location {
-    background-color: red;
-    flex-direction: column;
-    margin: 5px;
-    padding: 10px;
+#map { 
+    height: 180px; 
 }
 
-/* Taco truck picture inside location tag */
-.location img {
-    float: right;
+/* main style for about, yt-video and location containers */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* about */
+.about {
+    background-color: red;
+    flex-direction: column;
+    padding: 10px;
+    display: flex;
+    flex-basis: 100%;
+}
+
+/* youtube video */
+.yt-video {
+    display: flex;
+    flex-direction: column;
+    background-color: cyan;
+    padding: 10px;
+    flex-basis: 50%;
+    margin: 0px;
+}
+
+.yt-video img {
+    width: 300px;
+    height: auto;
+}
+
+/* location  */
+.location {
+    display: flex;
+    background-color: blue;
+    flex-direction: column;
+    max-height: 750px;
+    padding: 10px;
+    flex-basis: 50%;
+    margin: 0px;
+}
+
+/* location buttons for days of the week */
+.btn-wrapper {
+    flex-direction: row;
+    display: flex;
+
+}
+
+.btn-wrapper {
+    flex: 1 0;
 }
 
 button {
@@ -69,47 +115,17 @@ button:active {
     background-color: pink;
 } 
 
-.photos {
-    display: flex;
-    background-color: blue;
-    flex-direction: column;
-    max-height: 300px;
-    margin: 5px;
-    padding: 10px;
-    overflow: scroll; /* creates the scroll bar inside container */
-}
+/* When cursor is hovered over button*/
+button:hover {
+    background-color: hotpink;
+} 
 
+/* When button is clicked */
+button:active {
+    background-color: pink;
+} 
 
-.gallery {
-    margin: 5px;
-    border: 1px solid white;
-    float: left;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-    justify-content: space-evenly;
-}
-
-.gallery p {
-    padding: 5px;
-}
-
-.about {
-    display: flex;
-    float: right;
-    background-color: cyan;
-    flex-direction: column;
-    max-height: 300px;
-    margin: 5px;
-    padding: 10px;
-    overflow: scroll;
-}
-
-#map { height: 180px; 
-}
-
+/* footer  */
 footer {
     background-color: green;
     text-align: center;
