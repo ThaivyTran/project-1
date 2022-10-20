@@ -11,6 +11,21 @@ nav {
     float: right;
 }
 
+#title-font {
+    display: flex;
+    padding-left: 20px;
+    border: none;
+  
+}
+
+.responsive-img img{
+    width: 100%;
+    height: auto
+}
+
+.responsive-img{
+    max-width: 100%;
+}
 /* to remove bullet points in nav*/
 nav ul {
     list-style-type: none;
@@ -122,6 +137,16 @@ button:hover {
 button:active {
     background-color: pink;
 } 
+
+#player {
+    display: flex;
+    float: right;
+    flex-direction: column;
+    /* height: 270px;
+    width: 480px; */
+    margin: 5px;
+    padding: 10px;
+}
 
 /* google map size */
 #map { 

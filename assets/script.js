@@ -42,21 +42,3 @@ console.log(todayslocation)
 L.marker([39.961367, -75.159407]).addTo(map);
 })
 
-var saturdaybutton=document.querySelector("#saturday")
-saturdaybutton.addEventListener("click", function(){
-todayslocation=saturdaybutton.innerHTML
-console.log(todayslocation)
-L.marker([39.964393, -75.140663]).addTo(map);
-})
-
-var sundaybutton=document.querySelector("#sunday")
-sundaybutton.addEventListener("click", function(){
-todayslocation=sundaybutton.innerHTML
-console.log(todayslocation)
-L.marker([39.953183, -75.165119]).addTo(map);
-})
-
-
-
-
-
