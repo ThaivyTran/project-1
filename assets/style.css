@@ -130,17 +130,6 @@ button:active {
     background-color: pink;
 } 
 
-/* When cursor is hovered over button*/
-button:hover {
-    background-color: hotpink;
-} 
-
-/* When button is clicked */
-button:active {
-    background-color: pink;
-} 
-
-
 /* google map size */
 #map { 
     height: 400px; 
