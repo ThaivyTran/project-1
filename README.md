@@ -13,3 +13,5 @@ Please refer to the license in the repo.
 
 ## Credits
 Taco truck placeholder video courtesy of the JL Jupiter YouTube account. 
+
+Menu placeholder courtesy of Green Ghost Tacos
