@@ -11,6 +11,21 @@ nav {
     float: right;
 }
 
+#title-font {
+    display: flex;
+    padding-left: 20px;
+    border: none;
+  
+}
+
+.responsive-img img{
+    width: 100%;
+    height: auto
+}
+
+.responsive-img{
+    max-width: 100%;
+}
 /* to remove bullet points in nav*/
 nav ul {
     list-style-type: none;
