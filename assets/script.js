@@ -35,24 +35,28 @@ var wednesdaybutton=document.querySelector("#wednesday")
    L.marker([39.967285, -75.172344]).addTo(map);
 })
 
+var fridaybutton=document.querySelector("#friday")
+fridaybutton.addEventListener("click", function(){
+todayslocation=fridaybutton.innerHTML
+console.log(todayslocation)
+L.marker([39.961367, -75.159407]).addTo(map);
+})
+
+var saturdaybutton=document.querySelector("#saturday")
+saturdaybutton.addEventListener("click", function(){
+todayslocation=saturdaybutton.innerHTML
+console.log(todayslocation)
+L.marker([39.964393, -75.140663]).addTo(map);
+})
+
+var sundaybutton=document.querySelector("#sunday")
+sundaybutton.addEventListener("click", function(){
+todayslocation=sundaybutton.innerHTML
+console.log(todayslocation)
+L.marker([39.953183, -75.165119]).addTo(map);
+})
 
 
 
 
 
-
-
-// <!-- <script>var map = L.map('map').setView([39.952583,-75.165222], 13);</script>
-// --  refference for javascript map code--
-// <script>L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-// maxZoom: 15,
-// attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-// }).addTo(map);</script>
-// <script>L.marker([39.924827,-75.172945]).addTo(map);</script>
-// <script>L.marker([39.919390, -75.165419]).addTo(map);</script> -->
-
-// <!-- <script>var map = L.map('map').setView([39.952583,-75.165222], 13);</script>
-// <script>L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-// maxZoom: 19,
-// attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-// }).addTo(map);</script> -->
