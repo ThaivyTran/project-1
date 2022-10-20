@@ -35,4 +35,10 @@ var wednesdaybutton=document.querySelector("#wednesday")
    L.marker([39.967285, -75.172344]).addTo(map);
 })
 
+var fridaybutton=document.querySelector("#friday")
+fridaybutton.addEventListener("click", function(){
+todayslocation=fridaybutton.innerHTML
+console.log(todayslocation)
+L.marker([39.961367, -75.159407]).addTo(map);
+})
 
