@@ -15,14 +15,14 @@ var mondaybutton=document.querySelector("#monday")
 })
 
 var tuesdaybutton=document.querySelector("#tuesday")
-tuesdaybutton.addEventListener("click", function(){
+   tuesdaybutton.addEventListener("click", function(){
    todayslocation=tuesdaybutton.innerHTML
    console.log(todayslocation)
    L.marker([39.919390, -75.165419]).addTo(map);
 })
 
 var wednesdaybutton=document.querySelector("#wednesday")
-wednesdaybutton.addEventListener("click", function(){
+   wednesdaybutton.addEventListener("click", function(){
    todayslocation=wednesdaybutton.innerHTML
    console.log(todayslocation)
    L.marker([39.946824, -75.153572]).addTo(map);
