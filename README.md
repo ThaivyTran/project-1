@@ -1,21 +1,15 @@
-# Project 1
+# Tres Tamales Taco Truck
 
-## Description
+## Description 
+The goal of this project was to create a website for a fictional business called Tres Tamales Taco Truck. The website contains general information including an about us section, YouTube video, menu, and contact information. The site also includes a taco truck locator, which will display the location of the truck according to the day of the week selected by the user. Technologies used were HTML, CSS, and JavaScript. APIs used were Leaflet and YouTube. 
 
-A group project, that utilizes two web apis for our business webpage. For my group to do a 'git clone' for starting webpage files.
+## Site Image
+![Tres Tamales Taco Truck](./assets/images/TBA)
 
-## Installation
-
-N/A
-
-## Usage
-
-To view you can click here → <a href="https://thaivytran.github.io/project-1/" target="_blank">Webpage</a>
-
-## Credits
-
-N/A
+To visit the site click [here](https://thaivytran.github.io/project-1/). 
 
 ## License
+Please refer to the license in the repo. 
 
-Please refer to the LICENSE in the repo.
+## Credits
+Taco truck placeholder video courtesy of the JL Jupiter YouTube account. 
