@@ -138,6 +138,16 @@ button:active {
     background-color: pink;
 } 
 
+#player {
+    display: flex;
+    float: right;
+    flex-direction: column;
+    /* height: 270px;
+    width: 480px; */
+    margin: 5px;
+    padding: 10px;
+}
+
 /* google map size */
 #map { 
     height: 400px; 
