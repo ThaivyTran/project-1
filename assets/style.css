@@ -81,8 +81,8 @@ main {
     flex-wrap: wrap;
 }
 
-/* about */
-.about {
+/* Image carousel */
+.image-carousel {
     background-color: rgb(158, 42, 42);
     flex-direction: column;
     padding: 10px;
@@ -90,8 +90,8 @@ main {
     flex-basis: 100%;
 }
 
-/* youtube video */
-.yt-video {
+/* About */
+.about {
     display: flex;
     flex-direction: column;
     background-color: #4caf50;
