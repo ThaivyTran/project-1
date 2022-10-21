@@ -1,40 +1,33 @@
-//Load IFrame Player API
-  var tag = document.createElement('script');
+var APIKey = "AIzaSyBAwnSQ5q1_ibXlEK1hoL_Zb5YDO3w0dYA";
+var player = document.querySelector("#player");
+var videoId = "rev0JksurrY"
 
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-//Creates <iframe> (and YouTube player)
-  var player;
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-      height: '390',
-      width: '640',
-      videoId: 'rev0JksurrY',
-      playerVars: {
-        'playsinline': 1
-      },
-      events: {
-        'onReady': onPlayerReady,
-        'onStateChange': onPlayerStateChange
-          }
-        });
-      }
+var requestUrl = "https://www.googleapis.com/youtube/v3/search?key=rev0JksurrY&key=AIzaSyBAwnSQ5q1_ibXlEK1hoL_Zb5YDO3w0dYA&q=tacos&type=video&part=snippet";
 
-//The API will call this function when the video player is ready.
-  function onPlayerReady(event) {
-    event.target.playVideo();
-  }
+//YouTube API call 
+function searchYouTube() {
 
-//The API calls this function when the player's state changes.
-  var done = false;
-  function onPlayerStateChange(event) {
-    if (event.data == YT.PlayerState.PLAYING && !done) {
-      done = true;
-    }
-  }
-  function stopVideo() {
-     player.stopVideo();
-  }
+  fetch(requestUrl)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data);
+  })
+
+  displayYouTube(data)
+
+};
+
+searchYouTube()
+
+//Display YouTube video
+var displayYouTube = function (data) {
+
+ var tacoVideo = document.createElement(`container`);
+ 
+ tacoVideo.innerHTML = data.items[0].id.videoId
+
+}
 
