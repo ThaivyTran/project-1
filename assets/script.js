@@ -7,7 +7,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var todayslocation;
 
 var tacoTruck = L.icon({
-   iconUrl: "/assets/foodtruck.png",
+   iconUrl: "assets/foodtruck.png",
    iconSize: [,50]
    
 });
