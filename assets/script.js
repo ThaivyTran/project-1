@@ -1,5 +1,4 @@
-
-var map = L.map('map').setView([39.952583,-75.165222], 12);
+var map = L.map('map').setView([39.931675, -75.168120], 12);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 15,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -48,6 +47,16 @@ console.log(todayslocation)
 L.marker([39.961367, -75.159407], {icon: tacoTruck}).addTo(map).bindPopup('Spring Garden');
 })
 
+var saturdaybutton=document.querySelector("#saturday")
+saturdaybutton.addEventListener("click", function(){
+todayslocation=saturdaybutton.innerHTML
+console.log(todayslocation)
+L.marker([39.957194, -75.170760]).addTo(map);
+})
 
-
-
+var sundayybutton=document.querySelector("#sunday")
+sundayybutton.addEventListener("click", function(){
+todayslocation=sundayybutton.innerHTML
+console.log(todayslocation)
+L.marker([39.953615, -75.192071]).addTo(map);
+})
