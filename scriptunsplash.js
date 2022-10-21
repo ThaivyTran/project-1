@@ -22,8 +22,8 @@ fetch(requestUrl)
         tacoPicImg.setAttribute("src", data.results[i].urls.regular)
         tacoPicImg.setAttribute("style", "height: fit-content");
 
-        tacoPicImg.append(tacoPicLink);
-        tacoPicLink.append(carousel);
+        tacoPicLink.append(tacoPicImg);
+        carousel.append(tacoPicLink);
 
         }
 
