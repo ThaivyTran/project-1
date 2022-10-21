@@ -1,5 +1,4 @@
 var APIKey = "685Z0EKDM0JXimMnK972KqgRXFVYYIR5gnD45Kw2HNg";
-var carousel = (".carousel")
 
 var requestUrl = "https://api.unsplash.com/search/photos?page=1&query=tacos&client_id=685Z0EKDM0JXimMnK972KqgRXFVYYIR5gnD45Kw2HNg"
 
@@ -14,11 +13,18 @@ fetch(requestUrl)
         for (let i = 0; i < data.results.length; i++) {
             console.log(data.results[i].urls.regular);
 
-        var tacoPics = document.createElement(`a`);
-        tacoPics.classList.add("carousel-item");
-        tacoPics.setAttribute("href", ) //not sure what goes here
+       
+        var tacoPicLink = document.createElement(`a`);
+        tacoPicLink.classList.add("carousel-item");
+        tacoPicLink.setAttribute("href", carousel);
 
-    
+        var tacoPicImg = document.createElement(`img`);
+        tacoPicImg.setAttribute("src", data.results[i].urls.regular)
+        tacoPicImg.setAttribute("style", "height: fit-content");
+
+        tacoPicImg.append(tacoPicLink);
+        tacoPicLink.append(carousel);
+
         }
 
     })

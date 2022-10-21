@@ -100,12 +100,6 @@ main {
     margin: 0px;
 }
 
-#player {
-    display: flex;
-    align-items: center;
-    margin: 5px;
-    padding: 10px;
-}
 
 /* location  */
 .location {
