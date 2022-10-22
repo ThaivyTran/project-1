@@ -90,6 +90,12 @@ main {
     flex-basis: 100%;
 }
 
+#taco-pics {
+    display: flex;
+    align-items: center;
+    width: 75%;
+}
+
 /* About */
 .about {
     display: flex;

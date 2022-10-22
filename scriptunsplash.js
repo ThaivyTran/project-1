@@ -20,7 +20,7 @@ fetch(requestUrl)
 
         var tacoPicImg = document.createElement(`img`);
         tacoPicImg.setAttribute("src", data.results[i].urls.regular)
-        tacoPicImg.setAttribute("style", "height: fit-content");
+        tacoPicImg.classList.add("#taco-pics");
 
         tacoPicLink.append(tacoPicImg);
         carousel.append(tacoPicLink);
