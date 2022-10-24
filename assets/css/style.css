@@ -33,6 +33,7 @@ nav {
 
 } */
 
+
 .responsive-img img{
     width: 100%;
     height: auto
@@ -71,7 +72,8 @@ p {
 }
 
 img {
-    border: 2px solid;
+    border: none;
+    
 }
 
 /* main style for about, pics and location containers */
@@ -86,6 +88,7 @@ main {
     background-color: rgb(158, 42, 42);
     flex-direction: column;
     padding: 10px;
+    padding-bottom: 50px;
     display: flex;
     flex-basis: 100%;
 }
@@ -94,6 +97,7 @@ main {
     display: flex;
     align-items: center;
     height: 125%;
+    border: none;
 }
 
 /* About */
@@ -173,8 +177,20 @@ footer i:hover {
     color: white;
 }
 
-/* @media screen and (min-width: 480px) {
-    body {
-      background-color: lightgreen;
+
+@media screen and (min-width: 480px){
+    .about {
+        display:flex;
+        flex-direction:column;
+        flex-basis: 100%;
     }
-  } */
+}
+
+
+@media screen and (min-width: 780px){
+    .about {
+        display:flex;
+        flex-direction:column;
+        flex-basis: 50%;
+    }
+}
