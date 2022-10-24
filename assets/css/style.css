@@ -22,7 +22,7 @@ nav {
   
 }
 
-#taco-pic{
+/* #taco-pics{
     display: block;
     height: auto;
     width: 80%;
@@ -31,7 +31,7 @@ nav {
     border: none;
 
 
-}
+} */
 
 .responsive-img img{
     width: 100%;
@@ -74,15 +74,15 @@ img {
     border: 2px solid;
 }
 
-/* main style for about, yt-video and location containers */
+/* main style for about, pics and location containers */
 main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-/* about */
-.about {
+/* Image carousel */
+.image-carousel {
     background-color: rgb(158, 42, 42);
     flex-direction: column;
     padding: 10px;
@@ -90,8 +90,14 @@ main {
     flex-basis: 100%;
 }
 
-/* youtube video */
-.yt-video {
+.taco-pics {
+    display: flex;
+    align-items: center;
+    height: 125%;
+}
+
+/* About */
+.about {
     display: flex;
     flex-direction: column;
     background-color: #4caf50;
@@ -100,12 +106,6 @@ main {
     margin: 0px;
 }
 
-#player {
-    display: flex;
-    align-items: center;
-    margin: 5px;
-    padding: 10px;
-}
 
 /* location  */
 .location {
