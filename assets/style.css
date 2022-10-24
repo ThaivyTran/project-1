@@ -130,7 +130,7 @@ main {
 }
 
 button {
-    background-color: #ff5252;
+    background-color: #ff5252 !important;
     width: 70px;
     height: 25px;
 }
