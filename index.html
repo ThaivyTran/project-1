@@ -7,11 +7,12 @@
   <script src="https://kit.fontawesome.com/d6ffe85331.js" crossorigin="anonymous"></script>
 
    <!-- Compiled and minified CSS -->
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
      crossorigin=""/>
-   <link href="assets/style.css" rel="stylesheet" /> 
+   <link href="assets/css/style.css" rel="stylesheet" /> 
      <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
      crossorigin=""></script>
@@ -24,32 +25,37 @@
     <p class="brand-logo right"></p>
     <ul><li><a href="#about">About</a></li></ul>
     <ul><li><a href="#location">Location</a></li></ul>
-    <ul><li><a href="./assets/menu.jpg" target="_blank">Menu</a></li></ul>
-    <ul><li><a href="#yt-video">YouTube</a></li></ul>
+    <ul><li><a href="./assets/images/menu.jpg" target="_blank">Menu</a></li></ul>
+    <ul><li><a href="#image-carousel">Taco Images</a></li></ul>
     <ul><li><a href="#contact">Contact</a></li></ul>
  </nav>
 
  <header>
-   <figure class="responsive-img">
-   <img id= "title-font" src ="assets/titlefont.PNG">
-</figure>
-       <!-- add banner here if any -->
-
+    <figure class="responsive-img">
+    <img id= "title-font" src ="assets/images/titlefont.PNG">
+    </figure>
  </header>
+
 <main>
- <!-- about -->
- <section class="about" id="about" style="width:100%" class="float-right">
-   <!-- insert taco truck img below -->
-
-   <img src="assets/tacopic.jpg">
-    <p>Tres Tamales Taco Truck the best mobile Mexican joint in Philadelphia! We will be coming to a corner near you seven days a week. Check below to see where we will be located each day. </p>
-
+ <!-- Image carousel -->
+ <section class="image-carousel" id="image-carousel" style="width:100%">
+  <div class="carousel"></div>
  </section>
 
- <!-- youtube video  -->
- <section class="yt-video" id="yt-video">
-  <h2>Check out our videos and reviews on YouTube!</h2>
-  <div id="player"></div>
+ <!-- About -->
+ <section class="about" id="about">
+  <h2>About Us</h2>
+  <p>Tres Tamales Taco Truck the best mobile Mexican joint in Philadelphia! We will be coming to a corner near you seven days a week. Check out our taco truck locator to see where we will be each day.</p>
+  <h3>Hours of Operation</h3>
+  <ul>
+    <li>Monday: 12pm-10pm</li>
+    <li>Tuesday: 12pm-10pm</li>
+    <li>Wednesday: 12pm-10pm</li>
+    <li>Thursday: 12pm-10pm</li>
+    <li>Friday: 12pm-1am</li>
+    <li>Satuday: 12pm-1am</li>
+    <li>Sunday: 12pm-10pm</li>
+  </ul>
 </section>
 
 <!-- location  -->
@@ -69,10 +75,7 @@
    <div id="map"></div>
  </section>
 
-
-
 </main>
-
 
 <!-- footer  -->
  <footer class="contact" id="contact">
@@ -83,10 +86,10 @@
       <ul><p><i class="fa-solid fa-phone"></i>(999)999-9999</p></ul>
  </footer>
 
-    
  <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      <script src="scriptyoutube.js"></script>
-      <script src="assets/script.js"></script>
+    <script src="assets/js/scriptunsplash.js"></script>
+    <script src="assets/js/script.js"></script>
+      
    </body>
    </html>
