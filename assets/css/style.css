@@ -73,6 +73,7 @@ p {
 
 img {
     border: none;
+
     
 }
 
@@ -87,10 +88,27 @@ main {
 .image-carousel {
     background-color: rgb(158, 42, 42);
     flex-direction: column;
-    padding: 10px;
-    padding-bottom: 50px;
     display: flex;
     flex-basis: 100%;
+    
+}
+.image-carousel .responsive-image-item {
+    max-width: 300px;
+
+
+}
+
+.image-carousel .responsive-image-item > img {
+    width: 300px;
+    height: auto;
+   
+}
+
+#image-carousel .carousel {
+    height: 500px;
+    position: relative;
+    top: -75px;
+
 }
 
 .taco-pics {

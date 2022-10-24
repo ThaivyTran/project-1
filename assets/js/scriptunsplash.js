@@ -16,7 +16,8 @@ fetch(requestUrl)
        
         var tacoPicLink = document.createElement(`a`);
         tacoPicLink.classList.add("carousel-item");
-        tacoPicLink.setAttribute("href", carousel);
+        tacoPicLink.classList.add("responsive-image-item");
+        // tacoPicLink.setAttribute("href", carousel);
 
         var tacoPicImg = document.createElement(`img`);
         tacoPicImg.setAttribute("src", data.results[i].urls.regular)
@@ -29,7 +30,11 @@ fetch(requestUrl)
 
     })
     .then(function () {
-        $('.carousel').carousel();
+        $('.carousel').carousel(
+            // {
+            //     fullWidth: true
+            // }
+        );
         setInterval(function () {
             $('.carousel').carousel('next');
         }, 5000);
@@ -37,3 +42,5 @@ fetch(requestUrl)
     .catch(function (err) {
         console.error(err);
     });
+
+
