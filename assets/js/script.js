@@ -46,7 +46,7 @@ var fridaybutton=document.querySelector("#friday")
 fridaybutton.addEventListener("click", function(){
 todayslocation=fridaybutton.innerHTML
 console.log(todayslocation)
-L.marker([39.961367, -75.159407], {icon: tacoTruck}).addTo(map).bindPopup('Spring Garden');
+L.marker([39.961367, -75.159407], {icon: tacoTruck}).addTo(map).bindPopup('13th and Spring Garden');
 
 })
 
