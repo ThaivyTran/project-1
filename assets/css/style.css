@@ -22,7 +22,7 @@ nav {
   
 }
 
-#taco-pic{
+/* #taco-pics{
     display: block;
     height: auto;
     width: 80%;
@@ -31,7 +31,7 @@ nav {
     border: none;
 
 
-}
+} */
 
 .responsive-img img{
     width: 100%;
@@ -74,7 +74,7 @@ img {
     border: 2px solid;
 }
 
-/* main style for about, yt-video and location containers */
+/* main style for about, pics and location containers */
 main {
     display: flex;
     flex-direction: row;
@@ -90,10 +90,10 @@ main {
     flex-basis: 100%;
 }
 
-#taco-pics {
+.taco-pics {
     display: flex;
     align-items: center;
-    width: 75%;
+    height: 125%;
 }
 
 /* About */
